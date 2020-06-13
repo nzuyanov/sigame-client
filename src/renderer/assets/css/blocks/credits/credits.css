@@ -1,0 +1,23 @@
+@import url('./__title/credits__title.css');
+@import url('./__subtitle/credits__subtitle.css');
+@import url('./__text/credits__text.css');
+@import url('./__credits/credits__credits.css');
+@import url('./__credits-wrapper/credits__credits-wrapper.css');
+
+.credits {
+    width: 400px;
+    height: 100%;
+    color: white;
+    font-family: Inter;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: default;
+    user-select: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .credits {
+        width: 300px;
+    }
+}

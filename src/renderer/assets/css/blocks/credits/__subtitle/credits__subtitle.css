@@ -1,0 +1,15 @@
+.credits__subtitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+@media screen and (max-width: 1440px) {
+    .credits__subtitle {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}

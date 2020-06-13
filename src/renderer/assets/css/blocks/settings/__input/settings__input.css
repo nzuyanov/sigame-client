@@ -1,0 +1,25 @@
+@import url('./_large/seettings__input_large.css');
+@import url('./_medium/settings__input_medium.css');
+
+.settings__input {
+    color: white;
+    border: none;
+    outline: none;
+    background: none;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    transition: .2s ease;
+    cursor: pointer;
+    font-family: Inter;
+    resize: none;
+    overflow: hidden;
+}
+
+.settings__input::selection {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.settings__input:hover {
+    opacity: 0.7;
+}

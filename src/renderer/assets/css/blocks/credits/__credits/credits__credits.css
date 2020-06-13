@@ -1,0 +1,15 @@
+.credits__credits {
+    margin: 0;
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+@media screen and (max-width: 1440px) {
+    .credits__credits {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

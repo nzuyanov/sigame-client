@@ -1,1 +1,3 @@
-@import url('./test/test.css');
+@import url('./welcome/welcome.css');
+@import url('./credits/credits.css');
+@import url('./settings/settings.css');

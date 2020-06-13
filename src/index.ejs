@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>vest</title>
+    <title>Своя игра</title>
     <% if (htmlWebpackPlugin.options.nodeModules) { %>
       <!-- Add `node_modules/` to global paths so `require` works properly in development -->
       <script>
@@ -10,7 +10,7 @@
       </script>
     <% } %>
   </head>
-  <body>
+  <body class="background">
     <div id="app"></div>
     <!-- Set `__static` path to static files in production -->
     <%  if (!require('process').browser) { %>

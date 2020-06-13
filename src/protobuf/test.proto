@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package test;
+
+message Request {
+  repeated string labels = 1;
+}
+
+message Response {
+  bytes avatar = 1;
+}

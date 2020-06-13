@@ -1,0 +1,9 @@
+.settings__input_large {
+    font-size: 36px;
+}
+
+@media screen and (max-width: 1440px) {
+    .settings__input_large {
+        font-size: 32px;
+    }
+}
