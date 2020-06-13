@@ -53,9 +53,13 @@
     }
   },
   "dependencies": {
-    "vue": "^2.5.16",
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "axios": "^0.18.0",
+    "electron-json-storage": "^4.1.8",
+    "protobufjs": "^6.9.0",
+    "vue": "^2.5.16",
     "vue-electron": "^1.0.6",
+    "vue-native-websocket": "^2.0.14",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1",
     "vuex-electron": "^1.0.0"
