@@ -22,7 +22,7 @@ export default new Vuex.Store({
 				avatar: 'pride.jpg',
 				scores: 1000,
 				cost: 500,
-				state: PLAYER_CARD_STATES.ACTIVE_COST
+				state: PLAYER_CARD_STATES.INACTIVE
 			}
 		]
 	},
