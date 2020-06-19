@@ -3,8 +3,9 @@
         <div class="game-field__up">
             <!---
             <console></console>
-            --->
             <comment></comment>
+            --->
+            <referee></referee>
         </div>
         <div class="game-field__down">
             <!---
@@ -19,13 +20,15 @@
     import PlayersList from "./PlayersList";
     import Console from "./Console";
     import Comment from "./Comment";
+    import Referee from "./Referee";
 
   	export default {
         name: 'game-field',
         components: {
             PlayersList,
             Console,
-            Comment
+            Comment,
+            Referee,
         },
         data() {
     		return {
