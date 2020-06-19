@@ -25,6 +25,10 @@ export default new Vuex.Store({
 				state: PLAYER_CARD_STATES.INACTIVE
 			}
 		],
+		comment: {
+			title: 'Комментарий ведущего:',
+			comment: 'Назвать тайтл вместе сезоном'
+		},
 		logs: [
 			`import asdf Traceback (most recent call last): File "<stdin>", line 1, in <module> ModuleNotFoundError: No module named 'asdf'`,
 			`from collections import asdf Traceback (most recent call last): File "<stdin>", line 1, in <module> ImportError: cannot import name 'asdf'`,
