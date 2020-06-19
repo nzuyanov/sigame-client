@@ -11,6 +11,7 @@
 
 .button {
     transition: .3s ease-in-out;
+    cursor: pointer;
 }
 .button:focus {
     outline: none;
