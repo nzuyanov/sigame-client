@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+import mutations from './mutations/index'
+
 import { createPersistedState, createSharedMutations } from 'vuex-electron'
 
 import modules from './modules'
@@ -83,10 +85,11 @@ export default new Vuex.Store({
 			`from collections import asdf Traceback (most recent call last): File "<stdin>", line 1, in <module> ImportError: cannot import name 'asdf'`,
 		]
 	},
+	mutations,
 	modules,
 	plugins: [
-		createPersistedState(),
-		createSharedMutations()
+		//createPersistedState(),
+		//createSharedMutations()
 	],
 	strict: process.env.NODE_ENV !== 'production'
 })

@@ -97,6 +97,7 @@
 <script>
 
     import { mapState } from 'vuex';
+    import MutationTypes from '../store/mutations/types';
     import REFEREE_STATES from '../../constants/referee-states';
 
   	export default {
@@ -134,8 +135,10 @@
                 this.showScores = false;
             },
             handlePlayerScoresChanged(playerId) {
-                console.log(playerId);
-                console.log(this.$refs[`playerScoresInput${playerId}`][0].value);
+                this.$store.commit(MutationTypes.SET_NEW_PLAYER_SCORES, {
+                    playerId,
+                    value: this.$refs[`playerScoresInput${playerId}`][0].value
+                })
             }
         },
   }
