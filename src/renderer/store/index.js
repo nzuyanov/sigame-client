@@ -10,6 +10,7 @@ import GAME_SCREENS from '../../constants/game-screens'
 import COLORS from '../../constants/colors'
 import PLAYER_CARD_STATES from '../../constants/player-card-states'
 import REFEREE_STATES from '../../constants/referee-states'
+import MODALS from '../../constants/modals'
 
 Vue.use(Vuex)
 
@@ -83,7 +84,8 @@ export default new Vuex.Store({
 			`from collections import asdf Traceback (most recent call last): File "<stdin>", line 1, in <module> ImportError: cannot import name 'asdf'`,
 			`import asdf Traceback (most recent call last): File "<stdin>", line 1, in <module> ModuleNotFoundError: No module named 'asdf'`,
 			`from collections import asdf Traceback (most recent call last): File "<stdin>", line 1, in <module> ImportError: cannot import name 'asdf'`,
-		]
+		],
+		modal: MODALS.HELP
 	},
 	mutations,
 	modules,

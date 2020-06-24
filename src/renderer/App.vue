@@ -3,6 +3,7 @@
 		<welcome-screen v-if="screenIsWelcome"></welcome-screen>
 		<game-field v-if=screenIsGame></game-field>
 		<loading v-if="screenIsLoading"></loading>
+		<modal></modal>
   	</div>
 </template>
 
@@ -11,6 +12,7 @@
 	import WelcomeScreen from "./components/WelcomeScreen";
 	import Loading from "./components/Loading";
 	import GameField from "./components/GameField";
+	import Modal from "./components/Modal";
 	import GAME_SCREENS from "../constants/game-screens";
 
 	export default {
@@ -18,7 +20,8 @@
 		components: {
 			WelcomeScreen,
 			Loading,
-			GameField
+			GameField,
+			Modal
 		},
 		computed: {
 			...mapState({
