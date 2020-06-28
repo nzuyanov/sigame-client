@@ -4,8 +4,9 @@
             <!---
             <console></console>
             <comment></comment>
-            --->
             <referee></referee>
+            --->
+            <questions></questions>
         </div>
         <div class="game-field__down">
             <!---
@@ -21,6 +22,7 @@
     import Console from "./Console";
     import Comment from "./Comment";
     import Referee from "./Referee";
+    import Questions from "./Questions";
 
   	export default {
         name: 'game-field',
@@ -29,6 +31,7 @@
             Console,
             Comment,
             Referee,
+            Questions
         },
         data() {
     		return {
