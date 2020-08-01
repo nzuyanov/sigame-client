@@ -36,7 +36,7 @@ function createWindow () {
   })
 }
 
-app.removeAllListeners('ready')
+//app.removeAllListeners('ready')
 app.on('ready', createWindow)
 
 app.on('window-all-closed', () => {

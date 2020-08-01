@@ -1,14 +1,14 @@
 <template>
     <div class="questions" :style="tableTemplate">
-        <template v-for="(theme, i) in themes">
-            <div class="questions__container questions__container_theme" 
+        <template v-for="(theme, i) in themes" v-if="showTable">
+            <div class="questions__container questions__container_theme"
                 :key="theme.title"
-                :class="{ 
+                :class="{
                     'questions__container_tl': i === 0,
                     'questions__container_bl': i === themes.length - 1
                 }"
             >{{ theme.title }}</div>
-            <div class="questions__container questions__container_question" 
+            <div class="questions__container questions__container_question"
                 v-for="(q, j) in theme.questions"
                 :key="theme.title + q.cost"
                 :class="{
@@ -19,6 +19,7 @@
                 @click="handleQuestionClicked(i, j)"
             >{{ q.cost }}</div>
         </template>
+        <question v-if="!showTable"></question>
     </div>
 </template>
 
@@ -26,13 +27,16 @@
 
     import { mapState } from 'vuex';
     import MutationsTypes from '../store/mutations/types';
+    import Question from './Question';
 
   	export default {
         name: 'questions',
         components: {
+            Question
         },
         data() {
     		return {
+    		    showTable: true
     		}
         },
         computed: {
@@ -54,10 +58,11 @@
         },
     	methods: {
             handleQuestionClicked(tIndex, qIndex) {
-                this.$store.commit(MutationsTypes.HIDE_QUESTION_CARD, {
-                    tIndex,
-                    qIndex
-                })
+                this.showTable = false;
+                // this.$store.commit(MutationsTypes.HIDE_QUESTION_CARD, {
+                //     tIndex,
+                //     qIndex
+                // })
             }
         },
   }
@@ -73,6 +78,7 @@
         display: grid;
         background: #FFFFFF;
         grid-gap: 2px;
+        position: relative;
     }
     .questions__container {
         padding: 5px;
