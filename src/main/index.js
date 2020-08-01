@@ -24,6 +24,9 @@ function createWindow () {
     height: 700,
     minWidth: 1200,
     minHeight: 700,
+    webPreferences: {
+      nodeIntegration: true
+    }
   })
 
   mainWindow.loadURL(winURL)
@@ -33,6 +36,7 @@ function createWindow () {
   })
 }
 
+app.removeAllListeners('ready')
 app.on('ready', createWindow)
 
 app.on('window-all-closed', () => {

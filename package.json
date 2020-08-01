@@ -58,6 +58,7 @@
     "electron-json-storage": "^4.1.8",
     "protobufjs": "^6.9.0",
     "vue": "^2.5.16",
+    "vue-class-component": "^7.2.5",
     "vue-electron": "^1.0.6",
     "vue-native-websocket": "^2.0.14",
     "vue-router": "^3.0.1",
