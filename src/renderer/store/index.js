@@ -85,7 +85,159 @@ export default new Vuex.Store({
 			`import asdf Traceback (most recent call last): File "<stdin>", line 1, in <module> ModuleNotFoundError: No module named 'asdf'`,
 			`from collections import asdf Traceback (most recent call last): File "<stdin>", line 1, in <module> ImportError: cannot import name 'asdf'`,
 		],
-		modal: MODALS.HELP
+		modal: MODALS.NONE,
+		themes: [
+			{
+				title: 'Аниме',
+				questions: [
+					{
+						cost: 100,
+						done: false
+					},
+					{
+						cost: 200,
+						done: false
+					},
+					{
+						cost: 300,
+						done: false
+					},
+					{
+						cost: 400,
+						done: false
+					},
+					{
+						cost: 500,
+						done: false
+					},
+				]	
+			},
+			{
+				title: 'Всратые опенинги',
+				questions: [
+					{
+						cost: 100,
+						done: false
+					},
+					{
+						cost: 200,
+						done: false
+					},
+					{
+						cost: 300,
+						done: false
+					},
+					{
+						cost: 400,
+						done: false
+					},
+					{
+						cost: 500,
+						done: false
+					},
+				]	
+			},
+			{
+				title: 'Батины мемы',
+				questions: [
+					{
+						cost: 100,
+						done: false
+					},
+					{
+						cost: 200,
+						done: false
+					},
+					{
+						cost: 300,
+						done: false
+					},
+					{
+						cost: 400,
+						done: false
+					},
+					{
+						cost: 500,
+						done: false
+					},
+				]	
+			},
+			{
+				title: 'ВЕРНИ МНЕ МОЙ 2007',
+				questions: [
+					{
+						cost: 100,
+						done: false
+					},
+					{
+						cost: 200,
+						done: false
+					},
+					{
+						cost: 300,
+						done: false
+					},
+					{
+						cost: 400,
+						done: false
+					},
+					{
+						cost: 500,
+						done: false
+					},
+				]	
+			},
+			{
+				title: 'ПИВО',
+				questions: [
+					{
+						cost: 100,
+						done: false
+					},
+					{
+						cost: 200,
+						done: false
+					},
+					{
+						cost: 300,
+						done: false
+					},
+					{
+						cost: 400,
+						done: false
+					},
+					{
+						cost: 500,
+						done: false
+					},
+				]	
+			},
+			{
+				title: 'ЕЕЕЕЕ РОКЦ',
+				questions: [
+					{
+						cost: 100,
+						done: false
+					},
+					{
+						cost: 200,
+						done: false
+					},
+					{
+						cost: 300,
+						done: false
+					},
+					{
+						cost: 400,
+						done: false
+					},
+					{
+						cost: 500,
+						done: false
+					},
+				]	
+			},
+		]
 	},
 	mutations,
 	modules,
