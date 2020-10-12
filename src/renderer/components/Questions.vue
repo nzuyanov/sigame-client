@@ -118,4 +118,17 @@
     .questions__container_question:hover {
         background: #5B5E5F;
     }
+
+    @media screen and (max-width: 1500px) {
+        .questions {
+            width: 690px;
+            height: 454px;
+        }
+        .questions__container_theme {
+            font-size: 14px;
+        }
+        .questions__container_question {
+            font-size: 26px;
+        }
+    }
 </style>

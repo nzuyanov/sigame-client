@@ -36,7 +36,7 @@
 <style scoped>
     .comment {
         width: 195px;
-        height: 204px;
+        height: 194px;
         background: #EDEDED;
         border-radius: 5px;
         padding: 5px;

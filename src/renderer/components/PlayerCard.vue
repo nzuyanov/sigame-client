@@ -349,4 +349,10 @@
         position: absolute;
     }
 
+
+    @media screen and (max-width: 1500px) {
+        .player-card {
+            width: 150px;
+        }
+    }
 </style>
