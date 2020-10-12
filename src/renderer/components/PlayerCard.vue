@@ -2,7 +2,9 @@
     <div class="player-card" :style="backgroundStyle">
         <div class="player-card__wrapper">
             <div class="player-card__about" v-show="showAbout">
-                <img class="player-card__avatar" src="../assets/images/pride.jpg" alt="player-avatar" :style="`border-color: ${color}`">
+                <div class="player-card__avatar-wrapper">
+                    <img class="player-card__avatar" src="../assets/images/pride.jpg" alt="player-avatar" :style="`border-color: ${color}`">
+                </div>
                 <p class="player-card__nickname">{{ nickname }}</p>
             </div>
             <p class="player-card__scores" v-show="showScores">{{ scores }}<span class="player-card__cost">/{{ cost }}</span></p>
@@ -175,14 +177,19 @@
         transition: .2s linear;
         margin-bottom: var(--gap);
     }
-    .player-card__avatar {
-        width: 80px;
+    .player-card__avatar-wrapper {
         height: 80px;
+        width: 80px;
+        margin-right: 10px;
+    }
+    .player-card__avatar {
+        height: 80px;
+        width: 80px;
         overflow: hidden;
         border-radius: 40px;
         border: 4px solid;
         box-sizing: border-box;
-        margin-right: 10px;
+        object-fit: cover;
     }
     .player-card__about {
         display: flex;
