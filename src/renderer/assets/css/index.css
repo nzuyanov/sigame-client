@@ -1,4 +1,5 @@
 @import url('./blocks/index.css');
+@import url('./variables/index.css');
 @import url('../vendor/fonts/Inter/inter.css');
 
 .background {

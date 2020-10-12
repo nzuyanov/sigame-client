@@ -147,11 +147,11 @@
 <style scoped>
     .referee {
         width: 185px;
-        height: 380px;
+        height: 420px;
         background: #161A1B;
         border-radius: 5px;
         padding: 10px;
-        padding-bottom: 0;
+        margin-bottom: var(--gap);
     }
     .referee__head {
         display: flex;
@@ -166,6 +166,7 @@
         border-radius: 40px;
         overflow: hidden;
         margin-right: 10px;
+        object-fit: cover;
     }
     .referee__nickname {
         font-family: Inter;
@@ -264,7 +265,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        margin-top: 10px;    
+        margin-top: 10px;
     }
     .referee__player-scores-nickname {
         font-family: Inter;
