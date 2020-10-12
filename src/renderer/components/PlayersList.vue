@@ -1,9 +1,9 @@
 <template>
     <div class="players-list">
-        <player-card 
+        <player-card
             v-for="player in players"
             :key="player.id"
-            :player="player"       
+            :player="player"
         ></player-card>
     </div>
 </template>
@@ -35,5 +35,9 @@
 </script>
 
 <style scoped>
-
+    .players-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 </style>

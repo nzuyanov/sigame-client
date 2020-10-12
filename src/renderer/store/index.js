@@ -59,6 +59,42 @@ export default new Vuex.Store({
 				scores: 1500,
 				cost: 1500,
 				state: PLAYER_CARD_STATES.INACTIVE
+			},
+			{
+				id: 5,
+				nickname: 'Шерпа Esdeath',
+				color: COLORS.BLUE,
+				avatar: 'pride.jpg',
+				scores: 10000,
+				cost: 10000,
+				state: PLAYER_CARD_STATES.INACTIVE
+			},
+			{
+				id: 6,
+				nickname: 'The Last Pride',
+				color: COLORS.BLUE,
+				avatar: 'pride.jpg',
+				scores: 2000,
+				cost: 2000,
+				state: PLAYER_CARD_STATES.INACTIVE
+			},
+			{
+				id: 7,
+				nickname: 'Зритель',
+				color: COLORS.BLUE,
+				avatar: 'pride.jpg',
+				scores: 100,
+				cost: 100,
+				state: PLAYER_CARD_STATES.INACTIVE
+			},
+			{
+				id: 8,
+				nickname: 'Рамзан Кадыров',
+				color: COLORS.BLUE,
+				avatar: 'pride.jpg',
+				scores: 1500,
+				cost: 1500,
+				state: PLAYER_CARD_STATES.INACTIVE
 			}
 		],
 		comment: {
@@ -110,7 +146,7 @@ export default new Vuex.Store({
 						cost: 500,
 						done: false
 					},
-				]	
+				]
 			},
 			{
 				title: 'Всратые опенинги',
@@ -135,7 +171,7 @@ export default new Vuex.Store({
 						cost: 500,
 						done: false
 					},
-				]	
+				]
 			},
 			{
 				title: 'Батины мемы',
@@ -160,7 +196,7 @@ export default new Vuex.Store({
 						cost: 500,
 						done: false
 					},
-				]	
+				]
 			},
 			{
 				title: 'ВЕРНИ МНЕ МОЙ 2007',
@@ -185,7 +221,7 @@ export default new Vuex.Store({
 						cost: 500,
 						done: false
 					},
-				]	
+				]
 			},
 			{
 				title: 'ПИВО',
@@ -210,7 +246,7 @@ export default new Vuex.Store({
 						cost: 500,
 						done: false
 					},
-				]	
+				]
 			},
 			{
 				title: 'ЕЕЕЕЕ РОКЦ',
@@ -235,7 +271,7 @@ export default new Vuex.Store({
 						cost: 500,
 						done: false
 					},
-				]	
+				]
 			},
 		]
 	},

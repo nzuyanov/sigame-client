@@ -32,20 +32,16 @@
 
 <style scoped>
     .console {
-        width: 205px;
-        height: 654px;
+        width: 195px;
+        height: 649px;
         background: #EDEDED;
         border-radius: 5px;
-        padding-top: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-bottom: 0;
+        padding: 5px 5px 0;
         overflow: scroll;
-        margin-top: 10px;
         margin-bottom: 0;
     }
-    .console::-webkit-scrollbar { 
-        width: 0; 
+    .console::-webkit-scrollbar {
+        width: 0;
     }
     .console__log {
         font-style: normal;

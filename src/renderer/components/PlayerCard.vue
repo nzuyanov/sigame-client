@@ -16,7 +16,7 @@
             <button class="button player-card__input-ready-button" v-show="stateIsTextInput">Готов</button>
             <div class="player-card__bet-amount" v-show="stateIsBet">
                 <div style="width: 150px">
-                    <vue-slide-bar 
+                    <vue-slide-bar
                         :show-tooltip="true"
                         :paddingless="true"
                         :speed="0.2"
@@ -35,8 +35,8 @@
                         <div class="player-card__slider-label">{{ betMax }}</div>
                     </div>
                 </div>
-                <input class="player-card__bet-input" type="number" 
-                    :min="betMin" 
+                <input class="player-card__bet-input" type="number"
+                    :min="betMin"
                     :max="betMax"
                     v-model="betValue"
                     >
@@ -173,6 +173,7 @@
         border-radius: 5px;
         padding: 10px;
         transition: .2s linear;
+        margin-bottom: var(--gap);
     }
     .player-card__avatar {
         width: 80px;
