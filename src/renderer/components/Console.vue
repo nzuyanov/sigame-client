@@ -52,4 +52,10 @@
     .console__log:first-of-type {
         margin: 0;
     }
+
+    @media screen and (max-width: 1500px) {
+        .console {
+            height: 449px;
+        }
+    }
 </style>

@@ -147,7 +147,8 @@
 <style scoped>
     .referee {
         width: 185px;
-        height: 420px;
+        min-height: 420px;
+        height: calc(100% - 20px);
         background: #161A1B;
         border-radius: 5px;
         padding: 10px;

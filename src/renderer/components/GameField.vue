@@ -1,15 +1,12 @@
 <template>
     <div class="game-field">
         <div class="game-field__board game-field__board_up">
-            <div>
-                <referee></referee>
-                <comment></comment>
-            </div>
+            <referee></referee>
             <questions></questions>
             <console></console>
         </div>
         <div class="game-field__board game-field__board_down">
-            <div class="plug"></div>
+            <comment></comment>
             <players-list></players-list>
             <div class="plug"></div>
         </div>
