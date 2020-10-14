@@ -9,7 +9,7 @@
             </div>
             <p class="player-card__scores" v-show="showScores">{{ scores }}<span class="player-card__cost">/{{ cost }}</span></p>
             <div class="player-card__dialog-title" v-show="showDialogTitle">{{ dialogTitle }}</div>
-            <p class="player-card__apellation-message">{{ apellationMessage }}</p>
+            <p class="player-card__apellation-message" v-show="showApellationMessage">{{ apellationMessage }}</p>
             <div class="player-card__buttons-group" v-show="stateIsAppelation">
                 <button class="button player-card__apellation-button">Пересмотреть</button>
                 <button class="button player-card__apellation-button">Оставить</button>
@@ -136,6 +136,9 @@
             showDialogTitle() {
                 return this.stateIsBet || this.stateIsTextInput || this.stateIsAppelation;
             },
+            showApellationMessage() {
+                return this.stateIsAppelation;
+            },
             showScores() {
                 return this.showAbout;
             },
@@ -201,6 +204,7 @@
         font-weight: normal;
         font-size: 18px;
         color: white;
+        margin: 0;
     }
     .player-card__scores {
         cursor: default;
@@ -208,7 +212,8 @@
         font-weight: normal;
         font-size: 36px;
         color: white;
-        margin: 0;
+        margin-top: 0;
+        margin-bottom: 5px;
         text-align: right;
     }
     .player-card__wrapper {
@@ -303,6 +308,8 @@
         width: 70px;
         height: 40px;
         margin-bottom: 10px;
+        padding: 0;
+        text-align: center;
     }
     .player-card__bet-amount {
         display: flex;
@@ -349,4 +356,51 @@
         position: absolute;
     }
 
+
+    @media screen and (max-width: 1500px) {
+        .player-card {
+            width: 155px;
+            height: 125px;
+            padding: 5px;
+        }
+        .player-card__avatar-wrapper {
+            height: 60px;
+            width: 60px;
+            margin-right: 5px;
+        }
+        .player-card__avatar {
+            height: 60px;
+            width: 60px;
+            border-radius: 30px;
+            border: 4px solid;
+        }
+        .player-card__nickname {
+            font-size: 14px;
+        }
+        .player-card__scores {
+            font-size: 26px;
+        }
+        .player-card__apellation-message {
+            font-size: 10px;
+        }
+        .player-card__apellation-button {
+            font-size: 10px;
+            width: 75px;
+            height: 40px;
+        }
+        .player-card__bet-button {
+            font-size: 10px;
+            width: 50px;
+        }
+        .player-card__bet-input {
+            width: 50px;
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        .player-card__text-input {
+            width: calc(100% - 4px);
+            height: 55px;
+            font-size: 12px;
+        }
+    }
 </style>
