@@ -37,11 +37,15 @@
         background: #EDEDED;
         border-radius: 5px;
         padding: 5px 5px 0;
-        overflow: scroll;
+        overflow-y: scroll;
         margin-bottom: 0;
     }
     .console::-webkit-scrollbar {
-        width: 0;
+        width: 3px;
+    }
+    .console::-webkit-scrollbar-thumb {
+        background: #4E54D6;
+        -webkit-border-radius: 5px;
     }
     .console__log {
         font-style: normal;
