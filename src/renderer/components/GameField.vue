@@ -8,7 +8,7 @@
         <div class="game-field__board game-field__board_down">
             <comment></comment>
             <players-list></players-list>
-            <div class="plug"></div>
+            <game-controls></game-controls>
         </div>
     </div>
 </template>
@@ -20,6 +20,7 @@
     import Comment from "./Comment";
     import Referee from "./Referee";
     import Questions from "./Questions";
+    import GameControls from './GameControls';
 
   	export default {
         name: 'game-field',
@@ -28,7 +29,8 @@
             Console,
             Comment,
             Referee,
-            Questions
+            Questions,
+            GameControls,
         },
         data() {
     		return {

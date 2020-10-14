@@ -11,13 +11,14 @@
 }
 
 .button {
-    transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
     cursor: pointer;
 }
 .button:focus {
     outline: none;
 }
 .button:hover {
+    opacity: .7;
 }
 .button:active {
     transform: translate(0, 3px);
