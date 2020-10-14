@@ -44,12 +44,16 @@
 <style scoped>
     .game-field {
         padding: 10px;
+        height: calc(100vh - 20px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .game-field__board {
         display: grid;
         grid-template-columns: auto 990px auto;
         grid-column-gap: var(--gap);
-        justify-content: space-around;
+        justify-content: center;
     }
     .game-field__board_up {
         margin-bottom: var(--gap);

@@ -359,7 +359,7 @@
 
     @media screen and (max-width: 1500px) {
         .player-card {
-            width: 160px;
+            width: 155px;
             height: 125px;
             padding: 5px;
         }
