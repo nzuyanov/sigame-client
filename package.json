@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "electron-json-storage": "^4.1.8",
     "protobufjs": "^6.9.0",
     "vue": "^2.5.16",
